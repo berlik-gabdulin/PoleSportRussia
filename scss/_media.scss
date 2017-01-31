@@ -1,0 +1,192 @@
+@import "bourbon";
+
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+	
+}
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px){
+	.header__pole-wrapper {
+		text-align: right;
+		padding: 0 50px;
+	}
+	.header__pole-img {
+		position: static;
+		margin: 0 auto;
+		width: 100%;
+		max-width: 200px;
+	}
+	.header__pole-descr {
+		position: relative;
+		display: block;
+		margin: 0 auto;
+		width: 100%;
+		left: 0;
+		right: 0;
+		font-size: .9em;
+		top: -50px;
+		max-width: 300px;
+	}
+	.champ {
+		margin: -300px -50% 0;
+		padding: 300px 50% 0;
+		width: 200%;
+		border-radius: 150%/120%;
+	}
+	.wshop {
+		margin: -300px -50% 0;
+		padding: 300px 50% 40px;
+		width: 200%;
+		border-radius: 150%/120%;
+	}
+	.wshop__title {
+		margin: 30px auto;
+	}
+	.gala__pole-img {
+		margin-bottom: -120px;
+		top: -150px;
+	}
+	.gala__pole-img {
+		display: block;
+		margin: 0 auto;
+		max-width: 200px;
+		top: 0;
+	}
+	.gala__pole-descr {
+		margin: 15px auto;
+		font-size: .9em;
+	}
+	.wshop__pole-descr {
+		margin: 15px auto;
+		font-size: .9em;
+		text-align: center;
+	}
+	.wshop__form-descr {
+		margin: 30px auto;
+		padding: 0 30px;
+	}
+	.contacts {
+		padding-top: 30px;
+	}
+		
+}
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+	.champ {
+		margin: -300px -100% 0;
+		padding: 300px 100% 0;
+		width: 300%;
+		border-radius: 150%/120%;
+	}
+	.wshop {
+		margin: -300px -100% 0;
+		padding: 300px 100% 40px;
+		width: 300%;
+		border-radius: 150%/120%;
+	}
+	.header__pole-descr {
+		margin-top: 15px;
+		top: 0;
+	}
+	.champ__left {
+		margin-bottom: -30px;
+	}
+	.champ__left-img {
+		margin: 0 auto;
+	}
+	.champ__left-blur {
+		left: 0;
+		right: 0;
+		margin: 0 auto;
+	}
+	.champ__left-descr {
+		text-align: center;
+	}
+
+	.champ__list {
+		padding: 0 30px;
+	}
+	.champ__comp-ipfs {
+		position: static;
+		margin: 0 auto 15px;
+		top: 0;
+		bottom: 0;
+	}
+	.contactus .header__welcome-title {
+		font-size: 1em;
+	}
+	.reg .reg__form-partner {
+		margin-top: 0;
+	}
+	/*Disable Animation on Mobile Devices*/
+	.animated {
+		/*CSS transitions*/
+		-o-transition-property: none !important;
+		-moz-transition-property: none !important;
+		-ms-transition-property: none !important;
+		-webkit-transition-property: none !important;
+		transition-property: none !important;
+		/*CSS transforms*/
+		-o-transform: none !important;
+		-moz-transform: none !important;
+		-ms-transform: none !important;
+		-webkit-transform: none !important;
+		transform: none !important;
+		/*CSS animations*/
+		-webkit-animation: none !important;
+		-moz-animation: none !important;
+		-o-animation: none !important;
+		-ms-animation: none !important;
+		animation: none !important;
+	}
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+	
+}
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+	
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+	
+}
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+	
+}
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+	
+}
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+	
+}
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+	
+}
+

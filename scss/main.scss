@@ -1,0 +1,667 @@
+@import "bourbon";
+@import "vars.scss";
+
+//Load Libs SASS
+@import "app/libs/animate/animate.sass";
+
+*::-webkit-input-placeholder {
+	color: #666;
+	opacity: 1;
+}
+
+*:-moz-placeholder {
+	color: #666;
+	opacity: 1;
+}
+
+*::-moz-placeholder {
+	color: #666;
+	opacity: 1;
+}
+
+*:-ms-input-placeholder {
+	color: #666;
+	opacity: 1;
+}
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid {
+	color: #666;
+}
+body input:required:valid,
+body textarea:required:valid {
+	color: #666;
+}
+.main-body {
+	background: $mgrey;
+	overflow: hidden;
+	box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+}
+// Header styles begin
+
+.header {
+	position: relative;
+	background: url(../img/ricepaper2.png);
+	z-index: 100;
+}
+.header-bg {
+	position: relative;
+	width: 100%;
+	z-index: 100;
+}
+.header__logo {
+	
+}
+.header__logo-img {
+	display: block;
+	margin: 0 auto;
+	width: 100%;
+	max-width: 164px;
+}
+.header__logo2-img {
+	display: block;
+	margin: 0 auto;
+	width: 100%;
+	max-width: 117px;
+}
+.header__welcome-title {
+	display: block;
+	padding-top: 50px;
+	text-transform: uppercase;
+	font-size: 1.4em;
+	font-weight: normal;
+}
+.header__welcome-red {
+	color: $red;
+}
+.header__welcome-text {
+	text-transform: uppercase;
+	font-size: 1em;
+	font-weight: normal;
+	clear: both;
+}
+.header__pole-wrapper {
+	position: relative;
+}
+.header__pole-img {
+	position: relative;
+	top: -155px;
+	left: -330px;
+	margin: 0 auto -350px;
+	max-width: 538px;
+	z-index: 10;
+}
+.header__pole-descr {
+	position: relative;
+	left: -550px;
+	display: block;
+	width: 500px;
+	font-size: .7em;
+	color: $dgrey;
+	text-align: right;
+}
+.header__next {
+	position: relative;
+	display: block;
+	margin: 20px auto 0;
+	font-size: 1.4em;
+	text-align: center;
+	clear: both;
+	z-index: 50;
+}
+.header__next-text {
+
+}
+.header__next-arr {
+	display: block;
+	margin: 15px auto;
+	width: 63px;
+	height: 63px;
+	background: url(../img/arr-d-blue.png) no-repeat center center;
+}
+
+// Header styles end
+
+// Championship styles begin
+.champ {
+	position: relative;
+	background:  $lblue url(../img/stripes.png);
+	margin: -300px -10% 0;
+	padding: 300px 10% 0;
+	width: 120%;
+	min-height: 700px;
+	color: #fff;
+	border-radius: 150%/120%;
+	z-index: 90;
+	box-shadow: inset 0 -50px 200px 40px rgba(0, 0, 0, .3);
+}
+.champ__left {
+	position: relative;
+	padding: 40px;
+}
+.champ__left-img {
+	position: relative;
+	display: block;
+	width: 100%;
+	max-width: 310px;
+	z-index: 100;
+	box-shadow: 10px 10px 15px rgba(0, 0, 0, .4);
+}
+.champ__left-blur {
+	position: absolute;
+	opacity: .5;
+	top: 45%;
+	transform: translate(0, -50%) rotate(-10deg);
+	filter: blur(2px);
+	width: 80%;
+	max-width: 340px;
+	box-shadow: 10px 10px 15px rgba(0, 0, 0, .2);
+}
+.champ__left-descr {
+	position: relative;
+	display: block;
+	margin: 15px auto;
+	font-size: .7em;
+	color: #fff;
+	text-align: left;
+}
+
+.champ__right {
+
+}
+.champ__title {
+	text-align: center;
+	font-weight: normal;
+	text-transform: uppercase;
+	margin-bottom: 30px;
+}
+.champ__descr {
+	padding: 0 30px;
+}
+.champ__list {
+	// margin: 0;
+	padding: 0;
+}
+.champ__list-item {
+	&:first-of-type {
+		padding: 0;
+		list-style-type: none;
+	}
+}
+.champ__comp-ipfs {
+	position: relative;
+	display: block;
+	max-width: 115px;
+	margin: 0 auto -50px;
+	top: -80px;
+	clear: both;
+}
+.champ__form-button {
+	position: relative;
+	display: block;
+	margin: 0 auto;
+	padding-top: 7px;
+	width: 100%;
+	max-width: 270px;
+	height: 40px;
+	color: #fff;
+	text-align: center;
+	border-radius: 30px/13px;
+	text-transform: uppercase;
+	background: $lblue;
+	cursor: pointer;
+	z-index: 50;
+	transition: background .15s ease-in-out;
+	&:hover {
+		background: darken($lblue, 10%);
+		color: #fff;
+		text-decoration: none;
+	}
+	&:after {
+		position: absolute;
+		content: "";
+		display: block;
+		margin: 0 auto;
+		top: 1px;
+		left: 0;
+		right: 0;
+		width: 98%;
+		height: 20px;
+		border-radius: 25px/10px;
+		background: linear-gradient(bottom, transparent, #fff);
+		z-index: 40;
+	}
+}
+.champ__next-arr {
+	display: block;
+	margin: 15px auto -30px;
+	width: 63px;
+	height: 63px;
+	background: url(../img/arr-d-red.png) no-repeat center center;
+}
+// Championship styles end
+
+
+// Galashow styles begin
+.gala {
+	position: relative;
+	background: $mgrey;
+	z-index: 80;
+	padding-bottom: 10px;
+}
+.gala__title {
+	margin: 60px auto 15px;
+	text-align: center;
+	font-weight: normal;
+	text-transform: uppercase;
+}
+.gala__program {
+	
+}
+.gala__program-descr {
+	padding: 0 30px;
+}
+.gala__list {
+
+}
+.gala__list-item {
+
+}
+.gala__guest {
+
+}
+.gala__guest-img {
+	display: block;
+	margin: 0 auto 10px;
+	width: 100%;
+	max-width: 280px;
+}
+.gala__pole {
+	text-align: right;
+}
+.gala__pole-img {
+	position: relative;
+	margin-bottom: -195px;
+	top: -206px;
+	width: 100%;
+	max-width: 219px;
+}
+.gala__pole-descr {
+	position: relative;
+	display: block;
+	font-size: .7em;
+	color: $dgrey;
+	text-align: right;
+	text-align: center;
+}
+
+
+// Galashow styles end
+
+
+// Workshop begin
+.wshop {
+	position: relative;
+	background:  $coral url(../img/stripes.png);
+	margin: -300px -10% 0;
+	padding: 300px 10% 40px;
+	width: 120%;
+	min-height: 900px;
+	color: #fff;
+	border-radius: 150%/120%;
+	z-index: 70;
+	box-shadow: inset 0 -50px 200px 40px rgba(0, 0, 0, .3);
+}
+.wshop__title {
+	margin: 60px auto;
+	text-align: center;
+	font-weight: normal;
+	text-transform: uppercase;
+}
+.wshop__pole {
+	padding: 0 40px;
+}
+.wshop__pole-img {
+	display: block;
+	margin: 0 auto 15px;
+	width: 100%;
+	max-width: 300px;
+	box-shadow: 20px 20px 30px rgba(0, 0, 0, .35);
+}
+.wshop__pole-descr {
+	position: relative;
+	display: block;
+	padding: 0 15px;
+	font-size: .7em;
+	color: #fff;
+	text-align: left;
+}
+.wshop__text {
+	padding: 0 30px;
+	&:first-of-type {
+		margin-top: 0;
+	}
+}
+.wshop__list-descr {
+	padding: 0 30px;
+}
+.wshop__list {
+	padding: 0 30px;
+	list-style-type: none;
+}
+.wshop__list-item {
+
+}
+.wshop__form-descr {
+	display: block;
+	margin: 50px auto 30px;
+	font-size: .8em;
+	text-align: center;
+	max-width: 700px;
+	clear: both;
+}
+.wshop__form-button {
+	position: relative;
+	display: block;
+	margin: 0 auto;
+	padding-top: 7px;
+	width: 100%;
+	max-width: 270px;
+	height: 40px;
+	color: #fff;
+	text-align: center;
+	border-radius: 30px/13px;
+	text-transform: uppercase;
+	background: $coral;
+	cursor: pointer;
+	z-index: 50;
+	transition: background .15s ease-in-out;
+	&:hover {
+		background: darken($coral, 10%);
+		color: #fff;
+		text-decoration: none;
+	}
+	&:after {
+		position: absolute;
+		content: "";
+		display: block;
+		margin: 0 auto;
+		top: 1px;
+		left: 0;
+		right: 0;
+		width: 98%;
+		height: 20px;
+		border-radius: 25px/10px;
+		background: linear-gradient(bottom, transparent, #fff);
+		z-index: 40;
+	}
+}
+
+// Workshop end
+
+
+// Contacts begin
+.contacts {
+	padding-top: 50px;
+}
+.contacts__link {
+	display: block;
+	margin-bottom: 10px;
+	text-transform: uppercase;
+	color: #000;
+	font-size: 1.4em;
+	text-align: center;
+	transition: all 0.15s ease-in-out;
+	&:hover,
+	&:focus {
+		color: $dgrey;
+		text-decoration: none;
+	}
+	&:visited {
+		color: #000;
+		text-decoration: none;
+		&:hover,
+		&:focus {
+			color: $dgrey;
+			text-decoration: none;
+		}
+	}
+}
+.contacts__soc {
+	padding: 0;
+	list-style-type: none;
+	text-align: center;
+}
+.contacts__soc-item {
+	display: inline-block;
+	margin: 15px 5px;
+}
+.contacts__soc-img {
+	transition: all .15s ease-in-out;
+	filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, .5)); 
+	&:hover {
+		filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, .65)); 
+	}
+}
+// Contacts end
+
+
+// Location Styles begin
+
+.location {
+	position: relative;
+}
+.location__title-wrapper {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	background: rgba(255, 255, 255, .9);
+}
+.location__title {
+	text-align: center;
+	margin: 30px auto 0;
+	font-size: 1.2em;
+	font-weight: normal;
+	text-transform: uppercase;
+}
+.location__title-descr {
+	display: block;
+	margin: 0 auto 30px;
+	text-align: center;
+	font-size: .9em;
+	color: $dgrey;
+}
+.location-map {
+	margin-bottom: -8px;
+}
+// Location Styles end
+
+// Forms styles begin
+.contactus {
+	.header__welcome-title {
+		margin: 40px auto;
+		padding: 0 30px;
+		text-align: center;
+		font-size: 1.4em;
+	}
+	.contactus__img {
+		width: 100%;
+		max-width: 500px;
+	}
+	.contactus__descr {
+		display: block;
+		margin: 10px 0;
+		color: #000;
+		font-size: .7em;
+		text-align: right;
+	}
+	.contactus__form {
+
+	}
+	.input-group {
+		margin-bottom: 15px;
+	}
+	.contactus__label {
+		display: block;
+		text-transform: uppercase;
+	}
+	.contactus__checkbox-label {
+		display: inline-block;
+		text-transform: uppercase;
+	}
+	.contactus__text {
+		display: block;
+		width: 100%;
+		max-width: 500px;
+	}
+	.contactus__msg {
+		display: block;
+		width: 100%;
+		height: 330px;
+	}
+	.contactus__submit {
+		position: relative;
+		display: block;
+		margin: 30px auto 50px;
+		width: 100%;
+		max-width: 200px;
+		height: 40px;
+		color: #fff;
+		text-align: center;
+		border: none;
+		border-radius: 30px/13px;
+		text-transform: uppercase;
+		background: $coral;
+		cursor: pointer;
+		z-index: 50;
+		transition: background .15s ease-in-out;
+		&:hover {
+			background: darken($coral, 10%);
+			color: #fff;
+			text-decoration: none;
+		}
+		&:after {
+			position: absolute;
+			content: "";
+			display: block;
+			margin: 0 auto;
+			top: 1px;
+			left: 0;
+			right: 0;
+			width: 98%;
+			height: 20px;
+			border-radius: 25px/10px;
+			background: linear-gradient(bottom, transparent, #fff);
+			z-index: 40;
+		}
+	}
+}
+
+.reg {
+	.header__welcome-title {
+		margin: 40px auto;
+		padding: 0 30px;
+		text-align: center;
+		font-size: 1.4em;
+	}
+	.reg__radio-title {
+		text-transform: uppercase;
+		margin-bottom: 0;
+	}
+
+	.reg__img {
+		display: block;
+		margin: 0 auto;
+		width: 100%;
+		max-width: 500px;
+	}
+	.reg__descr {
+		display: block;
+		margin: 10px 0;
+		padding: 0 30px;
+		color: #000;
+		font-size: .7em;
+		text-align: right;
+	}
+	.reg__form {
+
+	}
+	.input-group {
+		margin-bottom: 15px;
+	}
+	.reg__label {
+		display: block;
+		text-transform: uppercase;
+	}
+	.reg__checkbox-label {
+		display: inline-block;
+		text-transform: uppercase;
+	}
+	.reg__text {
+		display: block;
+		width: 100%;
+		max-width: 500px;
+	}
+	.reg__msg {
+		display: block;
+		width: 100%;
+		height: 330px;
+	}
+	.reg__submit {
+		position: relative;
+		display: block;
+		margin: 30px auto 50px;
+		width: 100%;
+		max-width: 200px;
+		height: 40px;
+		color: #fff;
+		text-align: center;
+		border: none;
+		border-radius: 30px/13px;
+		text-transform: uppercase;
+		background: $lblue;
+		cursor: pointer;
+		z-index: 50;
+		transition: background .15s ease-in-out;
+		&:hover {
+			background: darken($lblue, 10%);
+			color: #fff;
+			text-decoration: none;
+		}
+		&:after {
+			position: absolute;
+			content: "";
+			display: block;
+			margin: 0 auto;
+			top: 1px;
+			left: 0;
+			right: 0;
+			width: 98%;
+			height: 20px;
+			border-radius: 25px/10px;
+			background: linear-gradient(bottom, transparent, #fff);
+			z-index: 40;
+		}
+	}
+	.required {
+		&:after {
+			content: "*";
+			font-size: 1.4em;
+			color: $red;
+			padding-left: 2px;
+		}
+	}
+	.reg__form-partner {
+		margin-top: -230px;
+		&.en {
+			margin-top: -320px;
+		}
+	}
+}
+
+// Forms styles end
+
+
+//ALWAYS END
+@import "media";
