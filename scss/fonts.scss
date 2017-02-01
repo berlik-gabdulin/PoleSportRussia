@@ -2,3 +2,4 @@
 
 @include font-face("MyriadPro", "../fonts/myriadpro/myriadpro-regular", $file-formats: eot woff woff2 svg ttf);
 @include font-face("MyriadProCond", "../fonts/MyriadProCond/MyriadPro-Cond", $file-formats: eot woff woff2 svg ttf);
+@include font-face("FontAwesome", "../fonts/fontawesome/fontawesome", $file-formats: eot woff woff2 svg ttf);

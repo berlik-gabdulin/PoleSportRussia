@@ -52,6 +52,11 @@ gulp.task('scripts', function() {
 		.pipe(gulp.dest('./app/js/'));
 	});
 
+gulp.task('fonts', function() {
+  return gulp.src('node_modules/font-awesome/fonts/*')
+    .pipe(gulp.dest('app/fonts/font-awesome/'))
+}) 
+
 gulp.task('watch', function () {
 	gulp.watch('scss/*.scss', ['styles']);
 	gulp.watch('jade/*.jade', ['jade']);
